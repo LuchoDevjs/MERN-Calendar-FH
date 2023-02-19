@@ -16,7 +16,7 @@ dbConnection();
 // CORS
 app.use(cors());
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 // Directorio publico
 app.use(express.static("public"));
